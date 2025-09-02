@@ -17,7 +17,7 @@ I created it to practice clean UI design and responsiveness. The page has a cont
 
 
 ## 📂 Project Files
-index2.html # Main HTML file
+index.html # Main HTML file
 styles.css # Stylesheet
 README.md # Documentation
 
