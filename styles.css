@@ -1,5 +1,4 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-/* ========== Global Reset & Fonts ========== */
 * {
   margin: 0;
   padding: 0;
@@ -212,3 +211,106 @@ html, body {
 .blue   { background: #65D3F5; transform: rotate(12deg) translateY(-40px) translateX(10px);  grid-column: 2; grid-row: 1; }
 .yellow { background: #F5C542; transform: rotate(21deg) translateX(-15px) translateY(10px); grid-column: 1; grid-row: 2; }
 .green  { background: #6ECF40; transform: rotate(-14deg) translateY(-50px); grid-column: 2; grid-row: 2; }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 40px;
+    border-radius: 60px;
+  }
+
+  .content {
+    gap: 30px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cards {
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  .card {
+    width: 150px;
+    height: 190px;
+  }
+}
+
+/* Small Tablets / Large Phones (≤768px) */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .card {
+    margin-right: 0;
+    transform: none !important; /* remove rotation for neat layout */
+  }
+
+  .purple, .blue, .yellow, .green {
+    transform: none !important;
+  }
+}
+
+/* Mobile Screens (≤480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px;
+    border-radius: 30px;
+  }
+
+  .header h2 {
+    font-size: 18px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .card p {
+    position: static;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
