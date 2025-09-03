@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 1170px;
+    width: 100%;
     overflow: auto;
     min-height: 100vh;
 }
@@ -245,7 +245,7 @@ body {
 
 @media (max-width: 1024px) {
     .container {
-        width: 90%;
+        width: 100%;
         height: auto;
         border-radius: 60px;
         overflow: hidden;
